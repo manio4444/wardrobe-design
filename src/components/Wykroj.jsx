@@ -7,7 +7,7 @@ import {Sizer} from "./Sizer";
 
 export const Wykroj = (props) => {
     const {width, height} =
-        orientationType.HORIZONTAL === orientationType.HORIZONTAL ? {
+        props.orientation === orientationType.HORIZONTAL ? {
             width: props.width,
             height: plyta,
         } : {
@@ -24,6 +24,7 @@ export const Wykroj = (props) => {
     console.log({name: props.name, ...style});
     return (<>
             <div
+                data-name={props.name}
                 className={`deska ${props.orientation || ''} ${props.colorType || ''} ${props.className || ''}`}
                 style={style}
             ></div>
