@@ -35,48 +35,41 @@ function App() {
             <div className="skos"></div>
             <div className="skos2"></div>
 
-            <Sizer
-                lvl={1}
-                position={'gora'}
-                size={consts.gora_polka_sze_wew}
-                left={consts.plyta}
-                width={consts.gora_polka_sze - consts.plyta}
-            />
-            <Sizer
-                position={"gora"}
-                lvl={1}
-                size={consts.gora_polka_sze_wew}
-                left={consts.plyta}
-                width={consts.gora_polka_sze - consts.plyta}
-            />
-            <Sizer
-                position={"gora"}
-                lvl={1}
-                size={consts.skos_sze}
-                left={consts.gora_polki}
-                width={consts.skos_sze}
-            />
-            <Sizer
-                position={"gora"}
-                lvl={2}
-                size={consts.gora_polka_sze}
-                left={0}
-                width={consts.gora_polka_sze}
-            />
-            <Sizer
-                position={"gora"}
-                lvl={3}
-                size={consts.gora_polki}
-                left={0}
-                width={consts.gora_polki}
-            />
-            <Sizer
-                position={"gora"}
-                lvl={4}
-                size={consts.ikea_gora}
-                left={0}
-                width={consts.ikea_gora}
-            />
+            {/*<Sizer*/}
+            {/*    lvl={1}*/}
+            {/*    position={'gora'}*/}
+            {/*    size={consts.gora_polka_sze_wew}*/}
+            {/*    left={consts.plyta}*/}
+            {/*    width={consts.gora_polka_sze - consts.plyta}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"gora"}*/}
+            {/*    lvl={1}*/}
+            {/*    size={consts.skos_sze}*/}
+            {/*    left={consts.gora_polki}*/}
+            {/*    width={consts.skos_sze}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"gora"}*/}
+            {/*    lvl={2}*/}
+            {/*    size={consts.gora_polka_sze}*/}
+            {/*    left={0}*/}
+            {/*    width={consts.gora_polka_sze}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"gora"}*/}
+            {/*    lvl={3}*/}
+            {/*    size={consts.gora_polki}*/}
+            {/*    left={0}*/}
+            {/*    width={consts.gora_polki}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"gora"}*/}
+            {/*    lvl={4}*/}
+            {/*    size={consts.ikea_gora}*/}
+            {/*    left={0}*/}
+            {/*    width={consts.ikea_gora}*/}
+            {/*/>*/}
 
             {/*<div className="pomocnicza_poziom" style="bottom: var(--sciana_wys);"></div>*/}
             {/*<div className="pomocnicza_poziom" style="bottom: calc(var(--sciana_wys) - var(--plyta));"></div>*/}
@@ -85,27 +78,27 @@ function App() {
             {/*<div className="pomocnicza_poziom lewa" style="bottom: calc(var(--drzwi_wys) - var(--lewa_polka_wys));"></div>*/}
             {/*<div className="pomocnicza_poziom" style="bottom: 0cm;"></div>*/}
 
-            <Sizer
-                position={"lewa"}
-                lvl={1}
-                size={consts.lewa_polka_wys}
-                width={consts.lewa_polka_wys}
-                bottom={consts.drzwi_wys - consts.lewa_polka_wys}
-            />
-            <Sizer
-                position={"lewa"}
-                lvl={1}
-                size={consts.lewa_polka_wys_wew}
-                bottom={consts.drzwi_wys - consts.lewa_polka_wys - consts.lewa_polka_wys}
-                width={consts.lewa_polka_wys_wew}
-            />
-            <Sizer
-                position={"lewa"}
-                lvl={1}
-                size={consts.lewa_polka_grupa_wys}
-                bottom={0}
-                width={consts.lewa_polka_grupa_wys}
-            />
+            {/*<Sizer*/}
+            {/*    position={"lewa"}*/}
+            {/*    lvl={1}*/}
+            {/*    size={consts.lewa_polka_wys}*/}
+            {/*    width={consts.lewa_polka_wys}*/}
+            {/*    bottom={consts.drzwi_wys - consts.lewa_polka_wys}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"lewa"}*/}
+            {/*    lvl={1}*/}
+            {/*    size={consts.lewa_polka_wys_wew}*/}
+            {/*    bottom={consts.drzwi_wys - consts.lewa_polka_wys - consts.lewa_polka_wys}*/}
+            {/*    width={consts.lewa_polka_wys_wew}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"lewa"}*/}
+            {/*    lvl={1}*/}
+            {/*    size={consts.lewa_polka_grupa_wys}*/}
+            {/*    bottom={0}*/}
+            {/*    width={consts.lewa_polka_grupa_wys}*/}
+            {/*/>*/}
 
             <Sizer
                 position={"prawa"}

@@ -10,6 +10,9 @@ export const sciana_sze = 253;
 export const sufit_kanal = 240;
 
 export const sufit_biala_srodek = ikea_sze_zew + ikea_sze_zew;
+export const pantograf = 130;
+export const szuflady_srodek = 2 * 40;
+export const biala_wysokosc_srodka_wew = pantograf + szuflady_srodek;
 export const lewa_drewniana_zew = 35;
 export const lewa_drewniana_wew = lewa_drewniana_zew - (2 * plyta);
 

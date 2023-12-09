@@ -12,7 +12,7 @@
   position: relative;
   transform: scale(1);
   transform-origin: left top;
-  margin: 2cm 1cm;
+  margin: 2cm 2cm;
   font-family: monospace;
 }
 
@@ -74,8 +74,8 @@
 }
 .sizer[data-sizer].lewa {
   left: 0;
-  transform: rotate(-90deg);
-  transform-origin: left bottom;
+  transform: rotate(-90deg) translateX(-100%) translateY(-100%);
+  transform-origin: left top;
 }
 .sizer[data-sizer].prawa {
   right: 0;
