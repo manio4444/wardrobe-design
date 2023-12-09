@@ -1,0 +1,26 @@
+.deska {
+  position: absolute;
+  background-color: #ddd;
+
+  &.drewno {
+    background-color: #ff6200;
+  }
+}
+
+.helper {
+  position: absolute;
+
+  &.pozioma {
+    height: calc(100% + 4cm);
+    width: 1px;
+    top: -2cm;
+    border-left: 1px dashed #ccc;
+
+    &.left {
+    }
+
+    &.right {
+    }
+
+  }
+}

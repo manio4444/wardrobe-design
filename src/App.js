@@ -1,9 +1,12 @@
 import * as consts from "./consts";
+import {config, typeType} from "./config";
 import {constToCssVar} from "./helpers";
 
 import './App.css';
+import './App.scss';
 
 import {Sizer} from "./components/Sizer";
+import {Wykroj} from "./components/Wykroj";
 
 function App() {
     return (
@@ -13,6 +16,12 @@ function App() {
         }}>
 
             <div className="main"></div>
+
+            {config.map(element => {
+                if (element.type === typeType.WYKROJ) {
+                    return <Wykroj key={element.name} {...element} />
+                }
+            })}
 
             <div className="ikea_gora"></div>
 
@@ -88,7 +97,7 @@ function App() {
                 lvl={1}
                 size={consts.lewa_polka_wys_wew}
                 bottom={consts.drzwi_wys - consts.lewa_polka_wys - consts.lewa_polka_wys}
-                width={consts.lewa_polka_wys - consts.plyta}
+                width={consts.lewa_polka_wys_wew}
             />
             <Sizer
                 position={"lewa"}

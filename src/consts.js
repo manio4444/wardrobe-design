@@ -2,10 +2,25 @@ import {properNumber} from "./helpers";
 
 
 export const plyta = 1.8;
+export const ikea_sze_zew = 75;
+export const ikea_sze_wew = ikea_sze_zew - plyta - plyta;
+
+export const sciana_wys = 269;
+export const sciana_sze = 253;
+export const sufit_kanal = 240;
+
+export const sufit_biala_srodek = ikea_sze_zew + ikea_sze_zew;
+export const lewa_drewniana_zew = 35;
+export const lewa_drewniana_wew = lewa_drewniana_zew - (2 * plyta);
+
+
+/**
+ * OLD TO REMOVE
+ */
+
 export const plyta_front = 2.2;
 
-export const sciana_wys = 245;
-export const sciana_sze = 304.5;
+
 
 export const skos = 112;
 export const skos_sze = 52;
@@ -31,10 +46,7 @@ export const gora_polka_wys_wew = properNumber(gora_polka_wys - plyta - plyta);
 
 
 export const drzwi_prawa = lewa_polka_sze + drzwi_sze;
-
-export const ikea_sze_zew = 75;
 export const ikea_sze = ikea_sze_zew - plyta;
-export const ikea_sze_wew = ikea_sze_zew - plyta - plyta;
 export const ikea_prawa = drzwi_prawa + ikea_sze * 2 + plyta;
 export const ikea_gora = 271;
 export const ikea_dol = 191.5;
@@ -49,3 +61,4 @@ export const glebokosc_lewa_polka = glebokosc - plyta;
 
 export const lustro_wysokosc = properNumber(ikea_pion - 0.8);
 export const wzmacniajaca_sze = 20;
+
