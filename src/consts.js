@@ -1,4 +1,4 @@
-const properNumer = InputNumber => Math.round((InputNumber + Number.EPSILON) * 1000) / 1000;
+import {properNumber} from "./helpers";
 
 
 export const plyta = 1.8;
@@ -16,7 +16,7 @@ export const lewa_polka_sze = 24;
 export const lewa_polka_sze_wew = 24 - plyta_front;
 export const lewa_polka_wys = 19;
 export const lewa_polka_wys_wew = 19 - plyta;
-export const lewa_polka_grupa_wys = properNumer(3 * lewa_polka_wys + plyta);
+export const lewa_polka_grupa_wys = properNumber(3 * lewa_polka_wys + plyta);
 
 
 export const drzwi_wys = 208.5;
@@ -27,7 +27,7 @@ export const gora_polka_sze = (gora_polki - plyta) / 4;
 export const gora_polka_sze_wew = (gora_polka_sze - plyta);
 export const gora_polka_sze_pierwsza = gora_polka_sze + plyta;
 export const gora_polka_wys = sciana_wys - drzwi_wys;
-export const gora_polka_wys_wew = properNumer(gora_polka_wys - plyta - plyta);
+export const gora_polka_wys_wew = properNumber(gora_polka_wys - plyta - plyta);
 
 
 export const drzwi_prawa = lewa_polka_sze + drzwi_sze;
@@ -47,5 +47,5 @@ export const glebokosc_srodek = 58;
 export const glebokosc = glebokosc_srodek + 8;
 export const glebokosc_lewa_polka = glebokosc - plyta;
 
-export const lustro_wysokosc = properNumer(ikea_pion - 0.8);
+export const lustro_wysokosc = properNumber(ikea_pion - 0.8);
 export const wzmacniajaca_sze = 20;

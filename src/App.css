@@ -8,8 +8,6 @@
 }
 
 .wrapper {
-  width: var(--sciana_sze);
-  height: var(--sciana_wys);
   padding: 0;
   position: relative;
   transform: scale(1);
@@ -102,7 +100,7 @@
   top: 0;
 }
 .sizer[data-sizer]::after {
-  content: attr(data-sizer);
+  /*content: attr(data-sizer);*/
   position: absolute;
   left: 0;
   width: 100%;
