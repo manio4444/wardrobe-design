@@ -53,8 +53,6 @@ function App() {
                 <div className="pion_prawy_polka"></div>
             </div>
 
-            <div className="skos"></div>
-            <div className="skos2"></div>
 
             {/*<Sizer*/}
             {/*    lvl={1}*/}
@@ -62,13 +60,6 @@ function App() {
             {/*    size={consts.gora_polka_sze_wew}*/}
             {/*    left={consts.plyta}*/}
             {/*    width={consts.gora_polka_sze - consts.plyta}*/}
-            {/*/>*/}
-            {/*<Sizer*/}
-            {/*    position={"gora"}*/}
-            {/*    lvl={1}*/}
-            {/*    size={consts.skos_sze}*/}
-            {/*    left={consts.gora_polki}*/}
-            {/*    width={consts.skos_sze}*/}
             {/*/>*/}
             {/*<Sizer*/}
             {/*    position={"gora"}*/}
@@ -121,14 +112,6 @@ function App() {
             {/*    width={consts.lewa_polka_grupa_wys}*/}
             {/*/>*/}
 
-            <Sizer
-                position={"prawa"}
-                lvl={1}
-                size={consts.skos}
-                className={"sciana_skos"}
-                bottom={consts.sciana_prawa_wys}
-                width={consts.skos}
-            />
             <Sizer
                 position={"prawa"}
                 lvl={3}
@@ -284,9 +267,7 @@ function App() {
             {/*<div className="pomocnicza_pion gora" style="left: calc(consts.gora_polka_sze_pierwsza + consts.gora_polka_sze);"></div>*/}
             {/*<div className="pomocnicza_pion gora" style="left: calc(consts.gora_polka_sze_pierwsza + consts.gora_polka_sze + consts.gora_polka_sze - consts.plyta);"></div>*/}
             {/*<div className="pomocnicza_pion gora" style="left: calc(consts.gora_polka_sze_pierwsza + consts.gora_polka_sze + consts.gora_polka_sze);"></div>*/}
-            {/*<div className="pomocnicza_pion gora" style="left: calc(consts.sciana_sze - consts.skos_sze - consts.plyta);"></div>*/}
             {/*<div className="pomocnicza_pion gora" style="left: consts.ikea_gora;"></div>*/}
-            {/*<div className="pomocnicza_pion gora" style="left: calc(consts.sciana_sze - consts.skos_sze);"></div>*/}
 
             {/*<div className="pomocnicza_pion" style="left: consts.sciana_sze;"></div>*/}
 

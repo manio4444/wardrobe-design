@@ -27,7 +27,6 @@ export const plyta_front = 2.2;
 
 
 
-export const skos = 112;
 export const skos_sze = 52;
 export const sciana_prawa_wys = 145;
 export const sciana_prawa_wys_wew = sciana_prawa_wys - plyta;

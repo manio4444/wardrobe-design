@@ -177,7 +177,7 @@ export const config = [
         }
     },
     {
-        name: "drewniana prawa lewa gora",
+        name: "drewniana prawa gora",
         type: typeType.WYKROJ,
         colorType: colorType.WOOD,
         orientation: orientationType.VERTICAL,
@@ -192,7 +192,7 @@ export const config = [
         }
     },
     {
-        name: "drewniana prawa lewa gora",
+        name: "drewniana prawa lewa 1",
         type: typeType.WYKROJ,
         colorType: colorType.WOOD,
         orientation: orientationType.HORIZONTAL,

@@ -25,6 +25,7 @@ export const Wykroj = (props) => {
     return (<>
             <div
                 data-name={props.name}
+                title={props.name}
                 className={`deska ${props.orientation || ''} ${props.colorType || ''} ${props.className || ''}`}
                 style={style}
             ></div>

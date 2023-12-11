@@ -118,12 +118,6 @@
 .sizer[data-sizer].prawa::after {
   bottom: 0.25cm;
 }
-.sizer[data-sizer].sciana_skos::before,
-.sizer[data-sizer].sciana_skos::after {
-  transform: rotate(-27.5deg);
-  transform-origin: left top;
-  /* width: 11.2cm; */
-}
 .sizer[data-sizer-value]::after {
   content: attr(data-sizer-value);
 }
@@ -136,27 +130,6 @@
   left: var(--lewa_polka_sze);
   border: 1px dashed black;
   border-bottom: 0;
-}
-
-.skos {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-left: 5.2cm solid transparent;
-  border-top: calc(var(--sciana_wys) - var(--sciana_prawa_wys)) solid black;
-}
-
-.skos2 {
-  content: '';
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  width: 0;
-  height: 0;
-  border-left: var(--skos_sze) solid transparent;
-  border-top: 10cm solid white;
 }
 
 .gora_polka {
