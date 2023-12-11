@@ -1,9 +1,16 @@
 .deska {
   position: absolute;
-  background-color: #aaa;
+  background-color: #cbcbcb;
+  border: 1px solid #666666;
+
+  &.pionowa {
+  }
+
+  &.pozioma {
+  }
 
   &.drewno {
-    background-color: #ff8133;
+    background-color: #fdb284;
   }
 }
 

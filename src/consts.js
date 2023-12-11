@@ -15,6 +15,8 @@ export const szuflady_srodek = 2 * 40;
 export const biala_wysokosc_srodka_wew = pantograf + szuflady_srodek;
 export const lewa_drewniana_zew = 35;
 export const lewa_drewniana_wew = lewa_drewniana_zew - (2 * plyta);
+export const prawa_drewniana_zew = sciana_sze - lewa_drewniana_zew - (2 * ikea_sze_zew);
+export const prawa_drewniana_wew = prawa_drewniana_zew - (2 * plyta);
 
 
 /**

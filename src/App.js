@@ -23,6 +23,27 @@ function App() {
                 }
             })}
 
+            <Sizer
+                lvl={2}
+                position={"gora"}
+                size={consts.lewa_drewniana_zew}
+                width={consts.lewa_drewniana_zew}
+            />
+            <Sizer
+                lvl={2}
+                position={"gora"}
+                size={consts.ikea_sze_zew}
+                width={consts.ikea_sze_zew}
+                left={consts.lewa_drewniana_zew}
+            />
+            <Sizer
+                lvl={2}
+                position={"gora"}
+                size={consts.prawa_drewniana_zew}
+                width={consts.prawa_drewniana_zew}
+                left={consts.sciana_sze - consts.prawa_drewniana_zew}
+            />
+
             <div className="ikea_gora"></div>
 
             <div className="pion_prawy">

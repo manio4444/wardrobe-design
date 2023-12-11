@@ -43,6 +43,7 @@ export const Wykroj = (props) => {
             {props.sizer && <Sizer
                 {...props.sizer}
                 left={props.left}
+                top={props.orientation === orientationType.VERTICAL ? props.top : undefined}
                 size={props.width}
                 width={props.width}
             />}
