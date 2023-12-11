@@ -43,6 +43,14 @@ function App() {
                 width={consts.prawa_drewniana_zew}
                 left={consts.sciana_sze - consts.prawa_drewniana_zew}
             />
+            <Sizer
+                lvl={1}
+                position={"lewa"}
+                size={consts.biala_wysokosc_srodka_wew}
+                width={consts.biala_wysokosc_srodka_wew}
+                left={consts.sciana_sze - consts.prawa_drewniana_zew - consts.plyta}
+                top={consts.plyta}
+            />
 
             <div className="ikea_gora"></div>
 

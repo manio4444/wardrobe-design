@@ -88,10 +88,6 @@ export const config = [
         width: biala_wysokosc_srodka_zew,
         left: lewa_drewniana_zew + ikea_sze_wew + plyta,
         top: 0,
-        sizer: {
-            lvl: 1,
-            position: "lewa",
-        }
     },
     {
         name: "biała środek górna prawej lewa",
@@ -188,9 +184,5 @@ export const config = [
         width: biala_wysokosc_srodka_zew,
         left: sciana_sze - prawa_drewniana_zew,
         top: 0,
-        sizer: {
-            lvl: 1,
-            position: "gora",
-        }
     },
 ]
