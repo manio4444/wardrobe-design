@@ -120,51 +120,51 @@ function App() {
             {/*    width={consts.lewa_polka_grupa_wys}*/}
             {/*/>*/}
 
-            <Sizer
-                position={"prawa"}
-                lvl={3}
-                size={consts.ikea_pion}
-                bottom={consts.plyta}
-                width={consts.ikea_pion + -0.3}
-                info={"Ikea pion płyta"}
-                infoPosition={"left"}
-            />
-            <Sizer
-                position={"prawa"}
-                lvl={1}
-                size={consts.sciana_prawa_wys_wew}
-                bottom={consts.plyta}
-                width={consts.sciana_prawa_wys_wew}
-            />
-            <Sizer
-                position={"prawa"}
-                lvl={2}
-                size={consts.sciana_prawa_wys}
-                bottom={0}
-                width={consts.sciana_prawa_wys}
-            />
-            <Sizer
-                position={"prawa"}
-                lvl={1}
-                size={consts.gora_polka_wys_wew}
-                bottom={consts.drzwi_wys + consts.plyta}
-                width={consts.gora_polka_wys_wew}
-            />
-            <Sizer
-                position={"prawa"}
-                lvl={2}
-                size={consts.gora_polka_wys}
-                bottom={consts.drzwi_wys}
-                width={consts.gora_polka_wys}
-                info={"Krzywy sufit, wacha się od 38.5cm do 37cm po prawo"}
-            />
-            <Sizer
-                position={"prawa"}
-                lvl={4}
-                size={consts.sciana_wys}
-                bottom={0}
-                width={consts.sciana_wys}
-            />
+            {/*<Sizer*/}
+            {/*    position={"prawa"}*/}
+            {/*    lvl={3}*/}
+            {/*    size={consts.ikea_pion}*/}
+            {/*    bottom={consts.plyta}*/}
+            {/*    width={consts.ikea_pion + -0.3}*/}
+            {/*    info={"Ikea pion płyta"}*/}
+            {/*    infoPosition={"left"}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"prawa"}*/}
+            {/*    lvl={1}*/}
+            {/*    size={consts.sciana_prawa_wys_wew}*/}
+            {/*    bottom={consts.plyta}*/}
+            {/*    width={consts.sciana_prawa_wys_wew}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"prawa"}*/}
+            {/*    lvl={2}*/}
+            {/*    size={consts.sciana_prawa_wys}*/}
+            {/*    bottom={0}*/}
+            {/*    width={consts.sciana_prawa_wys}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"prawa"}*/}
+            {/*    lvl={1}*/}
+            {/*    size={consts.gora_polka_wys_wew}*/}
+            {/*    bottom={consts.drzwi_wys + consts.plyta}*/}
+            {/*    width={consts.gora_polka_wys_wew}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"prawa"}*/}
+            {/*    lvl={2}*/}
+            {/*    size={consts.gora_polka_wys}*/}
+            {/*    bottom={consts.drzwi_wys}*/}
+            {/*    width={consts.gora_polka_wys}*/}
+            {/*    info={"Krzywy sufit, wacha się od 38.5cm do 37cm po prawo"}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"prawa"}*/}
+            {/*    lvl={4}*/}
+            {/*    size={consts.sciana_wys}*/}
+            {/*    bottom={0}*/}
+            {/*    width={consts.sciana_wys}*/}
+            {/*/>*/}
 
             {/*<div className="pomocnicza_pion" style="left: 0cm;"></div>*/}
             {/*<div className="pomocnicza_pion dol" style="left: var(--lewa_polka_sze);"></div>*/}
@@ -175,75 +175,75 @@ function App() {
             {/*<div className="pomocnicza_pion dol" style="left: calc(var(--drzwi_prawa) + var(--ikea_sze_zew) - var(--plyta) + var(--ikea_sze_zew));"></div>*/}
             {/*<div className="pomocnicza_pion dol" style="left: calc(var(--drzwi_prawa) + var(--ikea_sze_zew) - var(--plyta) + var(--ikea_sze_zew) - var(--plyta));"></div>*/}
 
-            <Sizer
-                position={"dol"}
-                lvl={1}
-                size={consts.lewa_polka_sze_wew}
-                left={0}
-                width={consts.lewa_polka_sze - consts.plyta}
-                info={" Wymiar na półki i tylnią płytę"}
-            />
-            <Sizer
-                position={" dol"}
-                lvl={2}
-                size={consts.lewa_polka_sze}
-                left={0}
-                width={consts.lewa_polka_sze}
-            />
-            <Sizer
-                position={"dol"}
-                lvl={1}
-                size={consts.drzwi_sze}
-                left={consts.lewa_polka_sze}
-                width={consts.drzwi_sze}
-                info={"Prawa linia to nie krawędź drzwi tylko punkt zaczepienia plyty meblowej (z bez piecznym zapasem)"}
-            />
-            <Sizer
-                position={"dol"}
-                lvl={1}
-                size={consts.ikea_sze_wew}
-                left={consts.drzwi_prawa + consts.plyta}
-                width={consts.ikea_sze_wew}
-                info={"Ikea szerokość wewnętrzna wsporników/półek. Minimum 2 pełne"}
-                infoPosition={"left"}
-            />
-            <Sizer
-                position={"dol"}
-                lvl={2}
-                size={consts.ikea_sze_zew}
-                left={consts.drzwi_prawa}
-                width={consts.ikea_sze_zew}
-                info={"Ikea szerokość modułu szafy"}
-            />
-            <Sizer
-                position={"dol"}
-                lvl={1}
-                size={consts.pion_prawy_wew}
-                left={consts.drzwi_prawa + consts.ikea_sze_zew + consts.ikea_sze}
-                width={consts.pion_prawy_wew}
-            />
-            <Sizer
-                position={"dol"}
-                lvl={2}
-                size={consts.pion_prawy}
-                left={consts.drzwi_prawa + consts.ikea_sze_zew + consts.ikea_sze}
-                width={consts.pion_prawy}
-            />
-            <Sizer
-                position={"dol"}
-                lvl={3}
-                size={consts.ikea_dol}
-                width={consts.ikea_dol}
-                left={consts.drzwi_prawa}
-                info={"Dolna deska po całej szerokości, na niej oparta szyna systemu przesuwnego"}
-            />
-            <Sizer
-                position={"dol"}
-                lvl={4}
-                size={consts.sciana_sze}
-                left={0}
-                width={consts.sciana_sze}
-            />
+            {/*<Sizer*/}
+            {/*    position={"dol"}*/}
+            {/*    lvl={1}*/}
+            {/*    size={consts.lewa_polka_sze_wew}*/}
+            {/*    left={0}*/}
+            {/*    width={consts.lewa_polka_sze - consts.plyta}*/}
+            {/*    info={" Wymiar na półki i tylnią płytę"}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={" dol"}*/}
+            {/*    lvl={2}*/}
+            {/*    size={consts.lewa_polka_sze}*/}
+            {/*    left={0}*/}
+            {/*    width={consts.lewa_polka_sze}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"dol"}*/}
+            {/*    lvl={1}*/}
+            {/*    size={consts.drzwi_sze}*/}
+            {/*    left={consts.lewa_polka_sze}*/}
+            {/*    width={consts.drzwi_sze}*/}
+            {/*    info={"Prawa linia to nie krawędź drzwi tylko punkt zaczepienia plyty meblowej (z bez piecznym zapasem)"}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"dol"}*/}
+            {/*    lvl={1}*/}
+            {/*    size={consts.ikea_sze_wew}*/}
+            {/*    left={consts.drzwi_prawa + consts.plyta}*/}
+            {/*    width={consts.ikea_sze_wew}*/}
+            {/*    info={"Ikea szerokość wewnętrzna wsporników/półek. Minimum 2 pełne"}*/}
+            {/*    infoPosition={"left"}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"dol"}*/}
+            {/*    lvl={2}*/}
+            {/*    size={consts.ikea_sze_zew}*/}
+            {/*    left={consts.drzwi_prawa}*/}
+            {/*    width={consts.ikea_sze_zew}*/}
+            {/*    info={"Ikea szerokość modułu szafy"}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"dol"}*/}
+            {/*    lvl={1}*/}
+            {/*    size={consts.pion_prawy_wew}*/}
+            {/*    left={consts.drzwi_prawa + consts.ikea_sze_zew + consts.ikea_sze}*/}
+            {/*    width={consts.pion_prawy_wew}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"dol"}*/}
+            {/*    lvl={2}*/}
+            {/*    size={consts.pion_prawy}*/}
+            {/*    left={consts.drzwi_prawa + consts.ikea_sze_zew + consts.ikea_sze}*/}
+            {/*    width={consts.pion_prawy}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"dol"}*/}
+            {/*    lvl={3}*/}
+            {/*    size={consts.ikea_dol}*/}
+            {/*    width={consts.ikea_dol}*/}
+            {/*    left={consts.drzwi_prawa}*/}
+            {/*    info={"Dolna deska po całej szerokości, na niej oparta szyna systemu przesuwnego"}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"dol"}*/}
+            {/*    lvl={4}*/}
+            {/*    size={consts.sciana_sze}*/}
+            {/*    left={0}*/}
+            {/*    width={consts.sciana_sze}*/}
+            {/*/>*/}
 
             <div className="gora_polka"></div>
             {/*<div className="gora_polka" style="left: calc(var(--gora_polka_sze_pierwsza));"></div>*/}
@@ -286,42 +286,42 @@ function App() {
 
             <div className="ikea_dol"></div>
 
-            <Sizer
-                position={"lewa"}
-                size={consts.drzwi_wys}
-                bottom={0}
-                left={'8cm'}
-                width={consts.drzwi_wys - 1}
-            />
-            <Sizer
-                position={"dol"}
-                top={"calc(100% - 10cm)"}
-                left={consts.drzwi_prawa + consts.plyta}
-                info={"Lewa i prawa przegroda zmniejszona 58cm + 8cm = 66cm"}
-            />
-            <Sizer
-                position={"dol"}
-                top={"calc(100% - 13cm)"}
-                left={consts.drzwi_prawa + consts.ikea_sze}
-                info={"Środkowa przegroda zmniejszona głębokość o system przesuwny (8cm), ale minimum 58cm (ikea)"}
-                infoPosition={"left"}
-            />
-            <Sizer
-                position={"dol"}
-                size={consts.ikea_sze}
-                top={"calc(100% - 5cm)"}
-                left={consts.drzwi_prawa + consts.ikea_sze}
-                width={consts.ikea_sze}
-                info={"Tyle będzie miało prawe skrzydło z lustrem, bo ma zachodzić na środkową przegrodę"}
-            />
-            <Sizer
-                position={"lewa"}
-                size={consts.lustro_wysokosc}
-                bottom={consts.plyta}
-                left={consts.drzwi_prawa + consts.ikea_sze + (consts.ikea_sze / 3)}
-                width={consts.lustro_wysokosc}
-                info={"Lustro wysokość: Ikea pion minus 8mm"}
-            />
+            {/*<Sizer*/}
+            {/*    position={"lewa"}*/}
+            {/*    size={consts.drzwi_wys}*/}
+            {/*    bottom={0}*/}
+            {/*    left={'8cm'}*/}
+            {/*    width={consts.drzwi_wys - 1}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"dol"}*/}
+            {/*    top={"calc(100% - 10cm)"}*/}
+            {/*    left={consts.drzwi_prawa + consts.plyta}*/}
+            {/*    info={"Lewa i prawa przegroda zmniejszona 58cm + 8cm = 66cm"}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"dol"}*/}
+            {/*    top={"calc(100% - 13cm)"}*/}
+            {/*    left={consts.drzwi_prawa + consts.ikea_sze}*/}
+            {/*    info={"Środkowa przegroda zmniejszona głębokość o system przesuwny (8cm), ale minimum 58cm (ikea)"}*/}
+            {/*    infoPosition={"left"}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"dol"}*/}
+            {/*    size={consts.ikea_sze}*/}
+            {/*    top={"calc(100% - 5cm)"}*/}
+            {/*    left={consts.drzwi_prawa + consts.ikea_sze}*/}
+            {/*    width={consts.ikea_sze}*/}
+            {/*    info={"Tyle będzie miało prawe skrzydło z lustrem, bo ma zachodzić na środkową przegrodę"}*/}
+            {/*/>*/}
+            {/*<Sizer*/}
+            {/*    position={"lewa"}*/}
+            {/*    size={consts.lustro_wysokosc}*/}
+            {/*    bottom={consts.plyta}*/}
+            {/*    left={consts.drzwi_prawa + consts.ikea_sze + (consts.ikea_sze / 3)}*/}
+            {/*    width={consts.lustro_wysokosc}*/}
+            {/*    info={"Lustro wysokość: Ikea pion minus 8mm"}*/}
+            {/*/>*/}
 
             <table className="wykroje" style={{"--sciana_sze": constToCssVar(consts.sciana_sze)}}>
                 <tbody>

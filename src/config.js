@@ -1,11 +1,14 @@
 import {
+    biala_wysokosc_srodka_wew,
     biala_wysokosc_srodka_zew,
     ikea_sze_wew,
     ikea_sze_zew,
     lewa_drewniana_wew,
     lewa_drewniana_zew,
     plyta,
-    prawa_drewniana_wew, prawa_drewniana_zew,
+    prawa_drewniana_dol_zew,
+    prawa_drewniana_wew,
+    prawa_drewniana_zew,
     sciana_sze, sciana_wys
 } from "./consts";
 
@@ -162,7 +165,7 @@ export const config = [
         }
     },
     {
-        name: "drewniana prawa gora",
+        name: "drewniana prawa gora gora",
         type: typeType.WYKROJ,
         colorType: colorType.WOOD,
         orientation: orientationType.HORIZONTAL,
@@ -176,7 +179,17 @@ export const config = [
         }
     },
     {
-        name: "drewniana prawa lewa 1",
+        name: "drewniana prawa gora dol",
+        type: typeType.WYKROJ,
+        colorType: colorType.WOOD,
+        orientation: orientationType.HORIZONTAL,
+        helperRight: true,
+        width: prawa_drewniana_wew,
+        left: sciana_sze - prawa_drewniana_wew - plyta,
+        top: biala_wysokosc_srodka_wew + plyta,
+    },
+    {
+        name: "drewniana prawa gora lewa",
         type: typeType.WYKROJ,
         colorType: colorType.WOOD,
         orientation: orientationType.VERTICAL,
@@ -184,5 +197,73 @@ export const config = [
         width: biala_wysokosc_srodka_zew,
         left: sciana_sze - prawa_drewniana_zew,
         top: 0,
+    },
+    {
+        name: "drewniana prawa gora prawa",
+        type: typeType.WYKROJ,
+        colorType: colorType.WOOD,
+        orientation: orientationType.VERTICAL,
+        helperLeft: true,
+        width: biala_wysokosc_srodka_zew,
+        left: sciana_sze - plyta,
+        top: 0,
+    },
+    {
+        name: "drewniana prawa dol dol",
+        type: typeType.WYKROJ,
+        colorType: colorType.WOOD,
+        orientation: orientationType.HORIZONTAL,
+        helperRight: true,
+        width: prawa_drewniana_wew,
+        left: sciana_sze - prawa_drewniana_wew - plyta,
+        top: sciana_wys - plyta,
+        sizer: {
+            lvl: 1,
+            position: "lewa",
+            top: biala_wysokosc_srodka_zew + (prawa_drewniana_dol_zew / 2),
+            left: sciana_sze - prawa_drewniana_wew + 10,
+            width: (prawa_drewniana_dol_zew / 2 - plyta),
+            size: (prawa_drewniana_dol_zew / 2 - plyta),
+        }
+    },
+    {
+        name: "drewniana prawa dol srodek",
+        type: typeType.WYKROJ,
+        colorType: colorType.WOOD,
+        orientation: orientationType.HORIZONTAL,
+        width: prawa_drewniana_wew,
+        left: sciana_sze - prawa_drewniana_wew - plyta,
+        top: biala_wysokosc_srodka_zew + (prawa_drewniana_dol_zew / 2 - plyta),
+        sizer: {
+            lvl: 1,
+            position: "lewa",
+            top: biala_wysokosc_srodka_zew,
+            left: sciana_sze - prawa_drewniana_wew + 10,
+            width: (prawa_drewniana_dol_zew / 2 - plyta),
+            size: (prawa_drewniana_dol_zew / 2 - plyta),
+        }
+    },
+    {
+        name: "drewniana prawa dol lewa",
+        type: typeType.WYKROJ,
+        colorType: colorType.WOOD,
+        orientation: orientationType.VERTICAL,
+        width: prawa_drewniana_dol_zew,
+        left: sciana_sze - prawa_drewniana_zew,
+        top: biala_wysokosc_srodka_zew,
+    },
+    {
+        name: "drewniana prawa dol prawa",
+        type: typeType.WYKROJ,
+        colorType: colorType.WOOD,
+        orientation: orientationType.VERTICAL,
+        helperTop: true,
+        width: prawa_drewniana_dol_zew,
+        left: sciana_sze - plyta,
+        top: biala_wysokosc_srodka_zew,
+        sizer: {
+            lvl: 1,
+            position: 'prawa'
+        }
     },
 ]

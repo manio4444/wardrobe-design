@@ -21,7 +21,7 @@ export const Wykroj = (props) => {
         width: constToCssVar(width),
         height: constToCssVar(height),
     }
-    console.log({name: props.name, ...style});
+    // console.log({name: props.name, ...style});
     return (<>
             <div
                 data-name={props.name}
@@ -42,11 +42,11 @@ export const Wykroj = (props) => {
                 }}
             />}
             {props.sizer && <Sizer
-                {...props.sizer}
-                left={props.left}
+                left={props.orientation === orientationType.HORIZONTAL ? props.left : undefined}
                 top={props.orientation === orientationType.VERTICAL ? props.top : undefined}
                 size={props.width}
                 width={props.width}
+                {...props.sizer}
             />}
         </>
     );

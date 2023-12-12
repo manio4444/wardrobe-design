@@ -79,8 +79,8 @@
 }
 .sizer[data-sizer].prawa {
   right: 0;
-  transform: rotate(-90deg) translate(100%, 100%);
-  transform-origin: right bottom;
+  transform: rotate(-90deg) translate(0%, 0%);
+  transform-origin: right top;
 }
 .sizer[data-sizer]::before {
   content: '';
